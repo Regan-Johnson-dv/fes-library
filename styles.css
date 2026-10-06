@@ -296,7 +296,7 @@ FEATURES
   width: 100%;
 }
 
-#footer {
+footer {
   background-color: #222124;
   display: flex;
 
@@ -307,11 +307,43 @@ FEATURES
 
 .logo__footer {
   max-width: 250px;
-  background-color:;
+  margin: 0 auto;
+  filter: grayscale(1) invert(1);
 }
 
 .explore__section {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.footer__list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__link{
+  text-decoration: none;
+  color: #f3f2f5;
+  padding:32px;
+  font-size:24px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer__img{
+  padding: 0;
+}
+
+.no-cursor{
+  cursor: no-drop;
+}
+
+.footer__copyright{
+  display: flex;
+  justify-content: center;
+  color: #bfbfbf;
 }

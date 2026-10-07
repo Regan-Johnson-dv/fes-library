@@ -252,6 +252,7 @@ HIGHLIGHTS
 .highlight__wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .highlight {
@@ -259,7 +260,7 @@ HIGHLIGHTS
   width: calc(100% / 3);
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
 }
 
@@ -285,6 +286,7 @@ HIGHLIGHTS
 .highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 /* 
@@ -432,13 +434,24 @@ a:hover {
     font-size:26px ;
   }
 
-  button {
-    font-size:18px ;
+.btn {
+    font-size: 18px;
   }
 
-.book { 
-  width: 50%;
-}
+  .books {
+    flex-wrap: wrap;
+  }
+
+  .book {
+    width: 50%;
+
+  .books__new{
+    flex-wrap: wrap;
+  }
+
+  .book__new {
+    width: 50%
+  }
 
 }
 
@@ -452,4 +465,11 @@ a:hover {
     display: block;
   }
 
+  .highlight {
+    width:100%;
+  }
+
+  .highlight:not(:last-child){
+    margin-bottom: 24px;
+  }
 }
